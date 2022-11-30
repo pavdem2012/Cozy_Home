@@ -31,5 +31,19 @@ export function waitVisibilityElement(element) {
   cy.get(element, { timeout: 10000 }).should("be.visible");
 }
 
+export function visit_site() {
+  cy.visit("/", {
+    auth: {
+      username: "admin",
+      password: "admin"
+    }
+  });
+}
+
+before(() => {
+  cy.log("Открываем сайт");
+  //visit_site()
+  cy.visit("/");
+});
 
 
