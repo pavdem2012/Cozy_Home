@@ -26,12 +26,21 @@ export function openPage(url) {
   cy.visit("/" + url);
 }
 
+export function open_page_stage(url) {
+  cy.visit("/" + url, {
+    auth: {
+      username: "admin",
+      password: "admin"
+    }
+  });
+}
+
 
 export function waitVisibilityElement(element) {
   cy.get(element, { timeout: 10000 }).should("be.visible");
 }
 
-export function visit_site() {
+export function visit_site_dev() {
   cy.visit("/", {
     auth: {
       username: "admin",
@@ -40,10 +49,16 @@ export function visit_site() {
   });
 }
 
+export function visit_site_prod() {
+  cy.visit("/");
+}
+
 before(() => {
   cy.log("Открываем сайт");
-  //visit_site()
-  cy.visit("/");
+  visit_site_dev();
+  //visit_site_prod();
 });
+
+
 
 

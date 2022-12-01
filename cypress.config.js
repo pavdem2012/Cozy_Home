@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 module.exports = defineConfig({
   projectId: "as9wiv",
   viewportWidth: 1920,
@@ -7,8 +7,8 @@ module.exports = defineConfig({
 
 
   e2e: {
-    //baseUrl: "https://cozyhome-stage-omni.dclouds.ru/",
-    baseUrl: "https://cozyhome.ru/",
+    baseUrl: "https://cozyhome-stage-omni.dclouds.ru",
+    //baseUrl: "https://cozyhome.ru/",
     setupNodeEvents(on, config) {
     }
     /*    "blockHosts": [
