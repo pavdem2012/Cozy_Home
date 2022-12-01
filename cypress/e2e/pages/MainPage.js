@@ -8,6 +8,7 @@ export default class MainPage {
   user_city_val_city_form = "div.ch-header-city-confirm__title > span";
   city_confirm_btn = ".ch-header-city-confirm__row > div:nth-child(2) > button";
   city_choose_bth_header = ".ch-header-sub__link > span";
+  city_choose_form = " .fancybox-stage > div > div > div";
   city_in_popup = ".ch-popup-city__secondary > ul:nth-child(5) > li:nth-child(1) > a";
   sign_pass_btn = "form > a";
   input_tel_field = "main > div > div > form > div:nth-child(2) > input";
@@ -18,12 +19,22 @@ export default class MainPage {
 
   confirm_city() {
     cy
+      .get(this.city_form)
+      .should("be.visible");
+    cy
+      .get(this.city_choose_btn)
+      .should("be.visible");
+    cy
       .get(this.user_city_val_city_form)
       .invoke("text")
       .as("user_city_val");
     cy
       .get(this.city_confirm_btn)
+      .should("be.visible")
       .click();
+    cy
+      .get(this.city_form)
+      .should("not.be.visible");
     cy
       .get(this.header_city_val)
       .invoke("text")
@@ -58,7 +69,15 @@ export default class MainPage {
 
   choose_city() {
     cy
-      .get(this.city_choose_bth_header).click();
+      .get(this.city_choose_bth_header)
+      .click();
+    cy
+      .get(this.city_choose_form)
+      .should("be.visible");
+    cy.get(".fancybox-ch__title")
+      .should("include.text", "Изменить регион");
+    cy.get(".ch-popup-city__secondary")
+      .should("be.visible");
     cy
       .get(this.city_in_popup)
       .invoke("text")

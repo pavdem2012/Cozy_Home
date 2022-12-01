@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7eab0b4d-ba4b-4d71-932c-39de98522102" name="Default Changelist" comment="some_code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/pages/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
