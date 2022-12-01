@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 module.exports = defineConfig({
   projectId: "as9wiv",
   viewportWidth: 1920,

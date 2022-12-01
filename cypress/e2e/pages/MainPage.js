@@ -1,3 +1,5 @@
+import { openPage } from "../../support/commands";
+
 export default class MainPage {
   city_form = ".ch-header-sub__city-confirm";
   city_choose_btn = ".ch-header-city-confirm__row > div:nth-child(1) > button";
@@ -7,7 +9,9 @@ export default class MainPage {
   city_confirm_btn = ".ch-header-city-confirm__row > div:nth-child(2) > button";
   city_choose_bth_header = ".ch-header-sub__link > span";
   city_in_popup = ".ch-popup-city__secondary > ul:nth-child(5) > li:nth-child(1) > a";
+  sign_pass_btn = "form > a";
 
+  //login_field =
 
   confirm_city() {
     cy.get(this.user_city_val_city_form).invoke("text").as("user_city_val");
@@ -45,6 +49,13 @@ export default class MainPage {
 
   }
 
+  user_authorization() {
+
+    let url = "/auth/login";
+    openPage(url);
+    cy.get(this.city_confirm_btn).click();
+    cy.get(this.sign_pass_btn).click();
+  }
 
   openRandomCard() {
     cy.get(this.productCard).eq(3).click();
