@@ -4,13 +4,8 @@
     <list default="true" id="7eab0b4d-ba4b-4d71-932c-39de98522102" name="Default Changelist" comment="some_code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/Tests/test1.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/Tests/test1.cy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/pages/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/videos/test1.cy.js.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/videos/test1.cy.js.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -7,8 +7,8 @@ module.exports = defineConfig({
 
 
   e2e: {
-    //baseUrl: "https://cozyhome-stage-omni.dclouds.ru/",
-    baseUrl: "https://cozyhome.ru/",
+    baseUrl: "https://cozyhome-stage-omni.dclouds.ru",
+    //baseUrl: "https://cozyhome.ru/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     }
