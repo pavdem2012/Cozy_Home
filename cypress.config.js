@@ -10,8 +10,6 @@ module.exports = defineConfig({
     //baseUrl: "https://cozyhome-stage-omni.dclouds.ru/",
     baseUrl: "https://cozyhome.ru/",
     setupNodeEvents(on, config) {
-      allureWriter(on, config);
-      return config;
     }
     /*    "blockHosts": [
           "www.googletagmanager.com",
