@@ -13,11 +13,16 @@
     "one_click": "cypress run --spec \\\"cypress/e2e/show_cart/one_click/*.js\\\" --browser chrome",
     "show_cart": "cypress run --spec \"cypress/e2e/show_cart/*.js\" --browser chrome",
     "tester_lena": "cypress run --spec \"cypress/e2e/testers_sample/tester_pavel/*.js\" --browser chrome",
-    "bla_bla_test": "cypress run --spec 'cypress/e2e'  --browser chrome"
+    "bla_bla_test": "cypress run --spec 'cypress/e2e'  --browser chrome",
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots  true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report  true"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
     "cross-env": "^7.0.3",
     "cypress": "^10.11.0",
     "cypress-xpath": "^2.0.0"
