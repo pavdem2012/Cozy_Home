@@ -10,12 +10,12 @@ module.exports = defineConfig({
     //baseUrl: "https://cozyhome-stage-omni.dclouds.ru/",
     baseUrl: "https://cozyhome.ru/",
     setupNodeEvents(on, config) {
-    }
-    /*    "blockHosts": [
+    },
+        "blockHosts": [
           "www.googletagmanager.com",
           "mc.yandex.ru",
           "www.google.com"
-        ]*/
+        ]
   }
 
 
